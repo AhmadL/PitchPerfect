@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func stopRecording(_ sender: Any) {
         print("stopped recording")
+        recordingLabel.text = "Recording stopped..."
     }
 }
 
