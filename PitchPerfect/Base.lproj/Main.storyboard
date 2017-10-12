@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aej-0c-inf"/>
-                                    <segue destination="fcj-1J-5dP" kind="show" id="cta-Dl-R5u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,16 +58,17 @@
                         <outlet property="recordButton" destination="0zd-hy-9wi" id="Qx4-0s-liD"/>
                         <outlet property="recordingLabel" destination="GEn-Pp-21C" id="TMw-x6-QZO"/>
                         <outlet property="stopRecordingButton" destination="Hr8-Cu-fqR" id="ccH-lL-bMG"/>
+                        <segue destination="fcj-1J-5dP" kind="show" identifier="stopRecording" id="aPk-rx-wjs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="479.19999999999999" y="102.99850074962519"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="yIa-a6-U5Y">
             <objects>
-                <viewController id="fcj-1J-5dP" sceneMemberID="viewController">
+                <viewController id="fcj-1J-5dP" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yUn-su-y5J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
